@@ -148,7 +148,7 @@ class Game
         return $this;
     }
 
-    public function setOutputFormat(string $format)
+    public function setOutputFormat(?string $format)
     {
         if (is_string($format) && sprintf($format, 1, 1, 1)) {
             $this->outputFormat = trim($format);
